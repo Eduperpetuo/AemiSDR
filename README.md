@@ -80,3 +80,7 @@ You may also find these projects interesting:
 - **MaskView:** A project focused on view masking.
 
 We hope you enjoy adding stunning blurs and masks to your SwiftUI applications with AemiSDR!
+
+## Links
+
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/aemisdr)
